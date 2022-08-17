@@ -1,0 +1,21 @@
+{
+  "name": "blog-doc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lonniehu/vitepress.git",
+  "author": "lonniehu",
+  "license": "MIT",
+  "scripts": {
+    "start": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "axios": "^0.27.2",
+    "less": "^4.1.3",
+    "sass": "^1.53.0",
+    "vitepress": "^1.0.0-alpha.4",
+    "zx": "^7.0.7"
+  }
+}
