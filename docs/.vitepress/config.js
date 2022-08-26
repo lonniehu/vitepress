@@ -43,6 +43,7 @@ export default defineConfig({
             { text: "sublime的nodejs插件", link: "/frontend/sublime-nodejs-install" },
             { text: "jquery", link: "/frontend/jquery" },
             { text: "vitepress-vue", link: "/frontend/vitepress-vue" },
+            { text: "防抖与节流", link: "/frontend/防抖与节流"},
           ]
         }
       ],
