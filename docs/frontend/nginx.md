@@ -1,7 +1,11 @@
 ## 1、window 版 nginx 版本下载地址
-  - http://nginx.org/en/download.html
+
+- http://nginx.org/en/download.html
+
 ## 2、nginx 学习视频
-  - https://juejin.cn/post/6844903701459501070#heading-12
+
+- https://juejin.cn/post/6844903701459501070#heading-12
+
 ## 3、centos 下安装 nginx||参考链接 https://juejin.cn/post/6844903701459501070
 
   ```javascript
@@ -111,6 +115,7 @@
   ```
 
 ## 查看磁盘、CPU、内存命令
+
  ```javascript
   // 磁盘
   df - hl
@@ -126,14 +131,14 @@
 
   // 逻辑 CPU = 物理 CPU 个数 × 每颗核数,如果与上面计算不一致的话，则表示服务器的CPU支持超线程技术。简单来说，它可使处理器中的 1 颗内核如 2 颗内核那样在操作系统中发挥作用。这样一来，操作系统可使用的执行资源扩大了一倍，大幅提高了系统的整体性能，此时逻辑 CPU = 物理 CPU 个数 × 每颗核数 × 2。
   cat /proc/cpuinfo | grep "processor" | wc -l
-  
+
 
   //查看内存信息
   // 1. 查看内存使用情况以及详细信息
   cat /proc/meminfo
 
   // 2. 查看内存总量
-  grep MemTotal /proc/meminfo   
+  grep MemTotal /proc/meminfo
 
   // 3. 查看空闲内存总量
   grep MemFree /proc/meminfo
@@ -144,4 +149,4 @@
   //5. 查看内存的插槽数,已经使用多少插槽.每条内存多大
   sudo dmidecode -t memory | grep Size
 
- ``` 
+ ```

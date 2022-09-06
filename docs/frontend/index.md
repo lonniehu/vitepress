@@ -1,10 +1,13 @@
 ## 网页转MD文档利器
+
 https://www.helloworld.net/html2md
 
 ## 前端框架QianKun微前端
+
 https://github.com/umijs/qiankun
 
 ## 前端学习
+
 - https://1loc.dev/
 - https://www.5cv.top/
 
@@ -12,12 +15,15 @@ https://github.com/umijs/qiankun
 - tailwindcss https://www.tailwindcss.cn/
 
 ## 前端框架组建
+
 https://juejin.cn/post/6951649464637636622
 
 ## webpack
+
 http://webpack.wuhaolin.cn/
 
 ## Promise 编写sleep方法
+
 ```js
 const sleep = (ms) => {
   return new Promise(resolve => setTimeout(resolve, ms))
@@ -25,6 +31,7 @@ const sleep = (ms) => {
 ```
 
 ## scrollIntoView
+
 document.querySelector('.rule-content').scrollIntoView({ behavior: 'smooth', block: 'start' })
 
 ![scrollToView](./img/scrollToView.png)
@@ -32,6 +39,7 @@ document.querySelector('.rule-content').scrollIntoView({ behavior: 'smooth', blo
 https://mp.weixin.qq.com/s/tkX-F5cQHaBP15oCJ2BJZw
 
 ## 移动端vh布局软键盘弹起改变高度问题
+
 问题描述
 在移动端使用vh布局。当页面中包含input、textarea输入框的时候，或者有调起软键盘的操作时，安卓浏览器下，可视窗口的高度改变，导致页面上的vh重新计算，页面被压扁。ios下的浏览器（safari）没有这个问题。
 
@@ -57,17 +65,21 @@ initViewport(window.innerHeight);
 ```
 
 ## qrcode
+
 QRCode.js 是一个用于生成二维码的 JavaScript 库。主要是通过获取 DOM 的标签,再通过 HTML5 Canvas 绘制而成,不依赖任何库。
 source: https://github.com/davidshimjs/qrcodejs
 
 ### 基本用法
+
 ```html
 <div id="qrcode"></div>
 <script type="text/javascript">
 new QRCode(document.getElementById("qrcode"), "http://www.runoob.com");  // 设置要生成二维码的链接
 </script>
 ```
+
 或者使用一些可选参数设置：
+
 ```js
 var qrcode = new QRCode("test", {
     text: "http://www.runoob.com",
@@ -82,12 +94,14 @@ var qrcode = new QRCode("test", {
 ## base64
 
 js原生代码
+
 ```js
 window.btoa(unescape(encodeURIComponent('我是一段需要处理的字符')))
 decodeURIComponent(escape(window.atob('5oiR5piv5LiA5q616ZyA6KaB5aSE55CG55qE5a2X56ym')))
 ```
 
 ## 图片压缩
+
 ```js
 
   /**
@@ -206,6 +220,7 @@ decodeURIComponent(escape(window.atob('5oiR5piv5LiA5q616ZyA6KaB5aSE55CG55qE5a2X5
     }
   }
 ```
+
 其他实现
 https://juejin.cn/post/6844903568726556686#heading-4
 
@@ -234,12 +249,15 @@ const dateFormat = (fmt, date) => {
 ```
 
 ## shelljs
- - https://www.kancloud.cn/outsider/clitool/313191
 
- ## JS AOP实现
+- https://www.kancloud.cn/outsider/clitool/313191
+
+## JS AOP实现
+
  AOP (Aspect Oriented Programming) ，意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。AOP是OOP的延续，是函数式编程的一种衍生，利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
 
 ### before（前置通知）
+
 ```js
 Function.prototype.before = function (beforefun) {
   var _orgin = this;    // 保存原函数引用
@@ -262,6 +280,7 @@ newFun("测试前置通知");
 ```
 
 ### after（后置通知）
+
 ```js
 Function.prototype.after = function (afterfun) {
   var _orgin = this;    // 保存原函数引用
@@ -285,6 +304,7 @@ newFun("测试后置通知");
 ```
 
 ### around（环绕通知）
+
 ```js
 // 利用前面的before、after方法实现
 Function.prototype.around = function(beforeFun, afterFun) {
@@ -294,4 +314,5 @@ Function.prototype.around = function(beforeFun, afterFun) {
   }
 }
 ```
+
 Refer：https://juejin.cn/post/6844903838172839943

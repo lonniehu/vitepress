@@ -20,7 +20,7 @@ Vue.use(Vuex)
 
 当然你 Vuex 首先得跟 main.js 扯上点关系嘛。这里的 main.js 因为项目原因，暂时换了个名字，不过也无影响，好了我们继续。
 
-=》引入 store 文件  =》   并且 Vue 实例上得将 挂载 store ，这下万无一失。可以继续了 
+=》引入 store 文件  =》   并且 Vue 实例上得将 挂载 store ，这下万无一失。可以继续了
 
 ```js
 //main.js

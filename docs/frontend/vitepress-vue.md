@@ -15,10 +15,9 @@ import test from '../../src/components/test.vue'
 
 ## {{$frontmatter.title}}
 
-<test 
+<test
   title="$frontmatter.title"
 />
-
 
 ## icon
 

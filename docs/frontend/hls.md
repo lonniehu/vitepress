@@ -10,7 +10,7 @@
 
 1.安装hls.js依赖
 
- 可以通过npm安装依赖   npm install hls.js --save  ，也可以通过引入的方式 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script> 
+ 可以通过npm安装依赖   npm install hls.js --save  ，也可以通过引入的方式 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 2.代码实现
 
@@ -69,7 +69,5 @@
 页面初始化mounted的时候，获取到m3u8视频的链接，然后通过getStream()方法加载视频，也通过videoPause()方法停止视频播放
 
 嗯，首先要感谢大佬的教导，就酱~~
-
-  
 
 本文转自 [https://www.cnblogs.com/jin-zhe/p/11975515.html](https://www.cnblogs.com/jin-zhe/p/11975515.html)，如有侵权，请联系删除。
