@@ -45,6 +45,7 @@ export default defineConfig({
             { text: "vitepress-vue", link: "/frontend/vitepress-vue" },
             { text: "防抖与节流", link: "/frontend/防抖与节流"},
             { text: "localStorage", link: "/frontend/local-storage"},
+            { text: "lazy-load", link: "/frontend/lazy-load" },
           ]
         }
       ],
