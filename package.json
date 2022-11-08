@@ -8,7 +8,8 @@
   "scripts": {
     "start": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "dev": "nodemon --ext js,ts --exec 'ts-node src/learn.ts'"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",
@@ -25,5 +26,11 @@
     "sass": "^1.53.0",
     "vitepress": "^1.0.0-alpha.4",
     "vue-loader": "^17.0.0"
+  },
+  "dependencies": {
+    "config": "^3.3.8",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.20",
+    "winston": "^3.8.2"
   }
 }

@@ -84,6 +84,9 @@
 
   ```
 
+## nginx 配置代理
+https://juejin.cn/post/6844903942262882318
+
 ## 4、centos 下配置 xftp|| [参考链接](https://www.jb51.net/article/127411.htm)
 
   ```javascript

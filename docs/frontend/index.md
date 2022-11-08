@@ -2,6 +2,13 @@
 
 https://www.helloworld.net/html2md
 
+## WebPack 详解
+https://juejin.cn/post/6844903599080734728
+
+## 前端知识汇总
+
+https://www.processon.com/view/link/61c53fb31efad45a2b42afd9#map
+
 ## 前端框架QianKun微前端
 
 https://github.com/umijs/qiankun
@@ -98,6 +105,16 @@ js原生代码
 ```js
 window.btoa(unescape(encodeURIComponent('我是一段需要处理的字符')))
 decodeURIComponent(escape(window.atob('5oiR5piv5LiA5q616ZyA6KaB5aSE55CG55qE5a2X56ym')))
+
+// nodejs
+var b = new Buffer.from('SmF2YVNjcmlwdA==', 'base64')
+let str = b.toString()
+console.log(str) // JavaScript
+
+
+var b = new Buffer('JavaScript');
+var s = b.toString('base64'); // SmF2YVNjcmlwdA==
+
 ```
 
 ## 图片压缩

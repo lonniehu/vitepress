@@ -1,14 +1,7 @@
 <template>
-  <div
-    class="virtual-scroller"
-    @scroll="onScroll"
-    :style="{ height: containerHeight + 'px' }"
-  >
+  <div class="virtual-scroller" @scroll="onScroll" :style="{ height: containerHeight + 'px' }">
     <!-- 实际渲染的列表内容 -->
-    <ul
-      class="real-list-content"
-      :style="{ transform: `translateY(${translateY}px)` }"
-    >
+    <ul class="real-list-content" :style="{ transform: `translateY(${translateY}px)` }">
       <li
         v-for="item in visibleList"
         :key="item.id"
@@ -22,9 +15,7 @@
     </ul>
 
     <!-- 虚拟列表元素 -->
-    <div class="virtual-height" :style="{ height: virtualHeight + 'px' }">
-      ~ 数据加载完毕 ~
-    </div>
+    <div class="virtual-height" :style="{ height: virtualHeight + 'px' }">~ 数据加载完毕 ~</div>
   </div>
 </template>
 
@@ -34,11 +25,11 @@ const list = (num = 10) => {
   for (let i = 0; i < num; i++) {
     data.push({
       id: i + 1,
-      name: `第 ${i + 1} 条列表`
+      name: `第 ${i + 1} 条列表`,
     });
   }
   return data;
-}
+};
 
 export default {
   data() {
@@ -49,7 +40,7 @@ export default {
       listItemHeight: 60,
       containerHeight: 600,
       translateY: 0,
-    }
+    };
   },
   computed: {
     visibleList() {
@@ -57,7 +48,7 @@ export default {
     },
     virtualHeight() {
       return (this.data.length - this.visibleList.length) * this.listItemHeight + this.listItemHeight;
-    }
+    },
   },
   methods: {
     onScroll(e) {
@@ -68,10 +59,10 @@ export default {
       this.startIndex = Math.floor(eleScrollTop / this.listItemHeight);
       // 基于开始索引
       this.endIndex = this.startIndex + 10;
-      window.console.log('onScroll', e.target.scrollTop, this.startIndex, this.endIndex)
-    }
-  }
-}
+      window.console.log('onScroll', e.target.scrollTop, this.startIndex, this.endIndex);
+    },
+  },
+};
 </script>
 
 <style>
@@ -105,5 +96,4 @@ li {
   background-color: #000;
   outline: solid 1px #fff;
 }
-
 </style>

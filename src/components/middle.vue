@@ -5,9 +5,10 @@
 </template>
 
 <script lang="ts" setup>
-  import axios from 'axios'
+import axios from 'axios';
 
-  axios.get('http://139.159.245.209:5000/api/WeatherForecast/get')
+axios
+  .get('http://139.159.245.209:5000/api/WeatherForecast/get')
   .then(function (response) {
     // handle success
     console.log(response);
@@ -20,19 +21,20 @@
     // always executed
   });
 
-  const jumpClick = () => window.open('https://github.com/lonniehu/vitepress','_blank')
+const jumpClick = () => window.open('https://github.com/lonniehu/vitepress', '_blank');
 </script>
 <style lang="scss" scoped>
 .middle {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   margin-top: 80px;
   color: var(--vp-c-brand);
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
+
   &:hover {
     color: var(--vp-c-brand-dark);
-  } 
+  }
 }
 </style>
