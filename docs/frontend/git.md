@@ -22,8 +22,6 @@
     cat ~/.ssh/id_rsa.pub
     ```
 
-- 1.2 //test2 updates
-
 - 1.2、 git config 配置提交用户名和用户邮箱
 
     ```javascript
